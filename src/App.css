@@ -845,3 +845,6 @@ body {
   display: inline-block;
   border-radius: 3px;
 }
+.customize {
+  margin: 130px 0 0 0;
+}
