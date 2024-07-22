@@ -7,6 +7,7 @@ import Secure from '../../images/secure.svg'
 import Share from '../../images/second-secure.svg'
 const Builder = () => {
   return (
+    <div className="werkfeed">
     <Container  className="text-center my-5">
       <h2 className="mb-5 custom-heading">What Makes Werkfeed Powerful?</h2>
       <Row className="justify-content-center ">
@@ -33,6 +34,7 @@ const Builder = () => {
       </Row>
       <a href="/builder" className="my-5 custom-btn  h-auto d-inline-block">Build Your CV</a>
     </Container>
+    </div>
   );
 }
 

@@ -8,7 +8,7 @@ const Customize = () => {
 
   return (
           <div>
-              <Navbar/>
+       <Navbar/>
         <section className="customize">
           <div className="container">
             <div className="row">
@@ -21,7 +21,6 @@ const Customize = () => {
             </div>
           </div>
         </section>
-        <FirstTemp/>
         <Footer isGeneral={true} />
       </div>
   )
