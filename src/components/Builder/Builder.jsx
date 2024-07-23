@@ -32,7 +32,7 @@ const Builder = () => {
           <p>Download</p>
         </Col>
       </Row>
-      <a href="/builder" className="my-5 custom-btn  h-auto d-inline-block">Build Your CV</a>
+      <Button  className="my-5 custom-btn h-auto d-inline-block" onClick={() => navigate('/builder')}>Build Your CV</Button>
     </Container>
     </div>
   );
