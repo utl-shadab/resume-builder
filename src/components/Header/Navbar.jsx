@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Navbar, Container, NavbarBrand, Nav, NavItem, Button, Offcanvas, OffcanvasHeader, OffcanvasBody } from 'reactstrap';
 import logo from '../../images/werkfeed-logo.png';
 const CustomNavbar = () => {
     const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const isHomePage = location.pathname === '/';
     const toggleOffcanvas = () => {
         setIsOffcanvasOpen(!isOffcanvasOpen);
@@ -48,7 +49,7 @@ const CustomNavbar = () => {
                             <NavLink className='text-white' to="/blog" activeClassName="active-link">Blog</NavLink>
                         </NavItem>
                         <NavItem>
-                            <Button color="primary" href="#login" className="mx-3 px-5 text-black bg-white border-0">Login</Button>
+                        <Button color="primary" onClick={() => navigate('/builder')} className="mx-3 px-5 text-black bg-white border-0">Login</Button>
                         </NavItem>
                     </Nav>
                 </Container>
