@@ -1,7 +1,7 @@
 import React from 'react'
 import ResumeTemplate from '../components/ResumeTemp/ResumeTemplate'
 import Footer from '../components/Footer/Footer'
-const Builder = () => {
+const CustomBuilder = () => {
   return (
     <div>
       <ResumeTemplate />
@@ -10,4 +10,4 @@ const Builder = () => {
   )
 }
 
-export default Builder
+export default CustomBuilder

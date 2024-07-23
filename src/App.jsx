@@ -11,7 +11,7 @@ import Contact from './Pages/Contact'
 import AboutUs from './Pages/AboutUs'
 import Login from './Pages/Login'
 import SignUp from './Pages/SignUp'
-import Builder from './Pages/Builder'
+import CustomBuilder from './Pages/CustomBuilder'
 import Home from './Pages/Home'
 import Customize from './Pages/Customize'
 import Work from './Pages/Work'
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <Router>
     <Routes>
-      <Route path="/builder" element={<Builder />} />
+      <Route path="/builder" element={<CustomBuilder />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/company" element={<Company />} />
       <Route path="/contact-us" element={<Contact />} />
