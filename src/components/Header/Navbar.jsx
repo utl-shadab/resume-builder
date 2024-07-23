@@ -49,7 +49,7 @@ const CustomNavbar = () => {
                             <NavLink className='text-white' to="/blog" activeClassName="active-link">Blog</NavLink>
                         </NavItem>
                         <NavItem>
-                        <Button color="primary" onClick={() => navigate('/builder')} className="mx-3 px-5 text-black bg-white border-0">Login</Button>
+                        <Button color="primary" onClick={() => navigate('/login')} className="mx-3 px-5 text-black bg-white border-0">Login</Button>
                         </NavItem>
                     </Nav>
                 </Container>
