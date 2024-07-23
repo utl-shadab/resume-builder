@@ -10,7 +10,7 @@ const Builder = () => {
     <div className="werkfeed">
     <Container  className="text-center my-5">
       <h2 className="mb-5 custom-heading">What Makes Werkfeed Powerful?</h2>
-      <Row className="justify-content-center ">
+      <Row className="justify-content-around ">
         <Col xs="6" sm="4" md="2" className="feature">
           <img src={Create} alt="Create" className="feature-image" />
           <p>Create</p>

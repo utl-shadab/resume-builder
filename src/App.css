@@ -73,7 +73,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--second-color);
-  height: 100vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,9 @@ body {
   transform: scale(1.05);
   color: var(--main-color);
 }
-
+.navbar-fl {
+  padding: 10px 128px !important;
+}
 #nav_top>i {
   font-size: 2.5vw;
   display: none;
@@ -223,7 +225,7 @@ body {
 .hero-bottom {
   margin-right: 12%;
   position: absolute;
-  top: 94%;
+  top: 53%;
   background-color: var(--white-color);
 }
 .color-sec{
@@ -307,12 +309,14 @@ body {
 }
 /* powerfull  */
 .powerfull {
-  background-color: var(--light-color);
-  padding: 20px;
+ 
+
   margin-left: 12%;
-
 }
-
+.powerfull-container{
+  background-color: var(--light-color) ;
+  padding: 20px;
+}
 .custom-heading {
   font-size: var(--font-36);
   font-weight: bold;

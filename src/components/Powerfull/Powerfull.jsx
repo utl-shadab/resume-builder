@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 const Powerfull = () => {
   return (
     <div className="powerfull">
-      <Container fluid>
+      <Container fluid className='powerfull-container'>
        
         <Row className='align-items-center'>
           <Col xs="12" md="6">

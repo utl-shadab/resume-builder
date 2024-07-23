@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
 import ProfilePic from "../../images/profile.png"
-const FirstTemp = () => {
+const FirstTemp = ({ profilePic , firstName, lastName , designation , email , phoneNumber , address , city , pincode , portfolio }) => {
+ 
   return (
     <div className='mb-5'>
+          
      <div className="resume">
   <div className="resume_left">
-    <div className="resume_profile">
-      <img src={ProfilePic} alt="profile_pic" />
-    </div>
+  <div className="resume_profile">
+            <img src={profilePic} alt="profile_pic" id="profile-pic" style={{ maxWidth: '100%', height: 'auto' }} />
+          </div>
     <div className="resume_content">
       <div className="resume_item resume_info">
         <div className="title">
-          <p className="bold p-0 mt-2 mb-0 text-center">stephen colbert</p>
-          <p className="regular p-0 text-center">Designer</p>
+        <p className="bold p-0 mt-2 mb-0 text-center" id='name'>{firstName} {lastName}</p>
+          <p className="regular p-0 text-center" id='designation'>{designation}</p>
         </div>
         <ul className='p-0'>
           <li>
@@ -20,26 +22,26 @@ const FirstTemp = () => {
               <i className="fas fa-map-signs" />
             </div>
             <div className="data">
-              21 Street, Texas  USA
+              {address} {city} {pincode}
             </div>
           </li>
           <li>
             <div className="icon">
               <i className="fas fa-mobile-alt" />
             </div>
-            <div className="data">+324 4445678</div>
+            <div className="data" id='phoneNumber'>{phoneNumber}</div>
           </li>
           <li>
             <div className="icon">
               <i className="fas fa-envelope" />
             </div>
-            <div className="data">stephen@gmail.com</div>
+            <div className="data" id='email'>{email}</div>
           </li>
           <li>
             <div className="icon">
               <i className="fab fa-weebly" />
             </div>
-            <div className="data">www.stephen.com</div>
+            <div className="data">{portfolio}</div>
           </li>
         </ul>
       </div>

@@ -26,7 +26,7 @@ const Header = () => {
     </div>
     {/* <HeroBottom /> */}
     <div className="hero-bottom">
-        <Container>
+        <Container fluid>
           <Row className='position-relative'>
             <Col lg="4" className='color-sec' >
               <div className="hero-bottom-image d-flex justify-content-end ">

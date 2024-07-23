@@ -14,7 +14,7 @@ const GetStarted = () => {
       <div className="get-started-content">
         <h2>Ready to get started?</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-        <button className="custom-btn bg-danger rounded-pill">Build Your CV</button>
+        <button className="custom-btn bg-danger rounded-pill" onClick={() => window.location.href = '/builder'}>Build Your CV</button>
       </div>
       <div className="get-started-image">
         <img src={FooterCv} alt="Get Started" />

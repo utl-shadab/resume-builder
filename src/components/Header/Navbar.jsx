@@ -26,7 +26,7 @@ const CustomNavbar = () => {
     return (
         <>
             <Navbar id="nav_top" expand="lg" fixed="top" className={`${isHomePage ? 'transparent-navbar' : 'seagreen-navbar'} ${isScrolled ? 'scrolled' : ''}`}>
-                <Container className="d-flex justify-content-between align-items-center">
+                <Container  className="d-flex  justify-content-between  align-items-center">
                     <NavbarBrand>
                         <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </NavbarBrand>
