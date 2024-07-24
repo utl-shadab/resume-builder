@@ -10,11 +10,12 @@ import Company from './Pages/Company'
 import Contact from './Pages/Contact'
 import AboutUs from './Pages/AboutUs'
 import Login from './Pages/Login'
-import SignUp from './Pages/SignUp'
 import CustomBuilder from './Pages/CustomBuilder'
 import Home from './Pages/Home'
+import Pricing from './Pages/Pricing'
 import Customize from './Pages/Customize'
 import Work from './Pages/Work'
+import Forget from './Pages/Forget'
 const App = () => {
   return (
     <Router>
@@ -25,14 +26,15 @@ const App = () => {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/sign-up" element={<SignUp />} />
       <Route path="/work" element={<Work />} />
       <Route path="/faq" element={<Faq />} />
       <Route path="/press-coverage" element={<PressCoverage />} />
       <Route path="/customer-review" element={<CustomerReview />} />
       <Route path="/service" element={<Service />} />
       <Route path="/" element={<Home />}  />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="/customize" element={<Customize />} />
+      <Route path="/forget" element={<Forget />} />
     </Routes>
   </Router>
   )

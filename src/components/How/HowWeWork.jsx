@@ -2,13 +2,14 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/effect-cards';
+import { useNavigate } from 'react-router-dom';
 import { EffectCards, Autoplay } from 'swiper/modules';
 import CV1 from '../../images/cv22.png'
 import CV2 from '../../images/c11.png'
 import CV3 from '../../images/c3.png'
 
 const HowWeWork = () => {
-
+const navigate = useNavigate();
  
 
 
@@ -42,7 +43,7 @@ const HowWeWork = () => {
           <Col md="6" className="text-container">
             <h2>How We Work</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <Button className='custom-btn'>View More</Button>
+            <Button className='custom-btn' onClick={() => window.location.href = '/work'}>View More</Button>
           </Col>
         </Row>
       </Container>

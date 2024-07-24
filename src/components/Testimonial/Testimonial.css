@@ -1,0 +1,58 @@
+.testi-monial-img img {
+    height: 299px;
+    width: 224px;
+    object-fit: contain;
+}
+.testi-monial-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #0b323c;
+    
+}
+.testi-monial-content{
+    position: relative;
+}
+.testi-monial-content p{
+    color: #0b323c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.quote-img {
+    position: absolute;
+    top: -57px;
+    left: 0;
+    width: 74px !important;
+    height: 51px !important;
+    object-fit: contain;
+    z-index: 1;
+    transform: rotate(210deg);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.quote-img-bottom {
+    position: absolute;
+    bottom: -86px;
+    right: 0;
+    width: 74px !important;
+    height: 51px !important;
+    object-fit: contain;
+    z-index: 1;
+    transform: rotate(22deg);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.testi-monial-section{
+    padding: 100px 0;
+    background-image: url(../../images/backgroundgreen.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

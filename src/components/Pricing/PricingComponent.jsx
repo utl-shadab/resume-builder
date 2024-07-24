@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card, CardBody, CardHeader, CardTitle, CardText, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
-const Pricing = () => {
+const PricingComponent = ({ margin }) => {
   const [modal, setModal] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [cardNumber, setCardNumber] = useState('');
@@ -112,7 +112,7 @@ const Pricing = () => {
   ];
 
   return (
-   <section className="pricing-card-section">
+   <section className="pricing-card-section" style={{ margin }}>
     <div className="container">
       <div className="row">
       {plans.map((plan, index) => (
@@ -215,4 +215,4 @@ const Pricing = () => {
   );
 }
 
-export default Pricing;
+export default PricingComponent;

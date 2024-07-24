@@ -4,7 +4,7 @@ import Header from '../components/Header/Header'
 import Builder from '../components/Builder/Builder'
 import Powerfull from '../components/Powerfull/Powerfull'
 import HowWeWork from '../components/How/HowWeWork'
-import Pricing from '../components/Pricing/Pricing'
+import PricingComponent from '../components/Pricing/PricingComponent'
 import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <Builder />
       <Powerfull />
       <HowWeWork/>
-      <Pricing/>
+      <PricingComponent/>
       <Footer isGeneral={false}/>
     </div>
   )

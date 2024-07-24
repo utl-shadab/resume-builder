@@ -41,9 +41,9 @@ const Footer = ({ isGeneral }) => {
         </Col>
       </Row>
     </Container>
-    <div className="footer-bottom text-center border-top py-3 bg-white">
-      <p className='text-dark'> &copy; 2024 Werkfeed. All rights reserved.</p>
-    </div>
+    <div className="footer-bottom text-center border-top  bg-white">
+      <p className='text-dark py-2'> &copy; 2024 Werkfeed. All rights reserved.</p>
+    </div> 
   </div>
   );
 };

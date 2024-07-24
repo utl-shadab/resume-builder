@@ -7,7 +7,8 @@ const CustomNavbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
-    const isHomePage = location.pathname === '/';
+    const isHomePageOrCompanyPage = location.pathname === '/' || location.pathname === '/company';
+   
     const toggleOffcanvas = () => {
         setIsOffcanvasOpen(!isOffcanvasOpen);
     };
@@ -23,10 +24,9 @@ const CustomNavbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
     return (
         <>
-            <Navbar id="nav_top" expand="lg" fixed="top" className={`${isHomePage ? 'transparent-navbar' : 'seagreen-navbar'} ${isScrolled ? 'scrolled' : ''}`}>
+    <Navbar id="nav_top" expand="lg" fixed="top" className={`${isHomePageOrCompanyPage ? 'transparent-navbar' : 'seagreen-navbar'} ${isScrolled ? 'scrolled' : ''}`}>
                 <Container  className="d-flex  justify-content-between  align-items-center">
                     <NavbarBrand>
                         <Link to="/"><img src={logo} alt="Logo" /></Link>
@@ -37,19 +37,19 @@ const CustomNavbar = () => {
                     </div>
                     <Nav className="d-none gap-4 d-lg-flex">
                     <NavItem className="nav-link-animated">
-                            <NavLink className='text-white' to="/service" activeClassName="active-link">Services</NavLink>
+                            <NavLink className='text-white' to="/" activeClassName="active-link">Home</NavLink>
                         </NavItem>
                         <NavItem className="nav-link-animated">
-                            <NavLink className='text-white' to="/work" activeClassName="active-link">Work</NavLink>
+                            <NavLink className='text-white' to="/about-us" activeClassName="active-link">About Us</NavLink>
                         </NavItem>
                         <NavItem className="nav-link-animated">
-                            <NavLink className='text-white' to="/company" activeClassName="active-link">Company</NavLink>
+                            <NavLink className='text-white' to="/pricing" activeClassName="active-link">Pricing</NavLink>
                         </NavItem>
                         <NavItem className="nav-link-animated">
-                            <NavLink className='text-white' to="/blog" activeClassName="active-link">Blog</NavLink>
+                            <NavLink className='text-white' to="/blog" activeClassName="active-link"> Contact Us</NavLink>
                         </NavItem>
                         <NavItem>
-                        <Button color="primary" onClick={() => navigate('/login')} className="mx-3 px-5 text-black bg-white border-0">Login</Button>
+                        <Button color="primary" onClick={() => navigate('/login')} className="mx-3 px-5 text-black bg-white border-0">Login / Register</Button>
                         </NavItem>
                     </Nav>
                 </Container>
