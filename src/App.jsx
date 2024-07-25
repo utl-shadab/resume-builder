@@ -16,6 +16,7 @@ import Pricing from './Pages/Pricing'
 import Customize from './Pages/Customize'
 import Work from './Pages/Work'
 import Forget from './Pages/Forget'
+import Registration from './Pages/Registration'
 const App = () => {
   return (
     <Router>
@@ -35,6 +36,7 @@ const App = () => {
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/customize" element={<Customize />} />
       <Route path="/forget" element={<Forget />} />
+      <Route path="/registration" element={<Registration />} />
     </Routes>
   </Router>
   )

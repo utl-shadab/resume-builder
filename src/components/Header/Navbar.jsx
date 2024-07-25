@@ -46,7 +46,7 @@ const CustomNavbar = () => {
                             <NavLink className='text-white' to="/pricing" activeClassName="active-link">Pricing</NavLink>
                         </NavItem>
                         <NavItem className="nav-link-animated">
-                            <NavLink className='text-white' to="/blog" activeClassName="active-link"> Contact Us</NavLink>
+                            <NavLink className='text-white' to="/contact-us" activeClassName="active-link"> Contact Us</NavLink>
                         </NavItem>
                         <NavItem>
                         <Button onClick={() => navigate('/login')} className="mx-3 px-5 work-with-us-button">Login</Button>

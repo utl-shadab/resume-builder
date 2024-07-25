@@ -1,8 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Header/Navbar'
-import { Link } from 'react-router-dom'
 import Footer from '../components/Footer/Footer'
-import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import Mission from '../images/mission.svg'
 import Simplicity from '../images/simplicity.png'
 import Smartphone from '../images/smartphone.png'
@@ -10,19 +9,13 @@ import Technology from '../images/technology-driven.png'
 import Flexibility from '../images/flexiblity.png'
 import Ownership from '../images/data-ownership.png'
 import Goals from '../components/How/Goals'
+import BreadcrumbComponent from '../components/Breadcrumb/BreadcrumbComponent'
 
 const AboutUs = () => {
   return (
     <div>
       <Navbar />
-      <section className='breadcrumb-container'>
-      <Container className='position-relative' >
-            <Breadcrumb className='breadcrumb-center'>
-            <BreadcrumbItem><Link to="/" className='bread-text'>Home</Link></BreadcrumbItem>
-            <BreadcrumbItem  className='text-white' active>About Us</BreadcrumbItem>
-          </Breadcrumb>
-        </Container>
-      </section>
+      <BreadcrumbComponent pageName="About Us" />
       <Container>
       <Row className="align-items-center text-center text-md-left">
               <Col md="6">

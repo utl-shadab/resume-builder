@@ -42,7 +42,7 @@ const LoginComponent = () => {
   return (
     <Container className="login-container">
       <Row className="justify-content-center align-items-center px-5">
-          <h2 className="text-center">Welcome back! Please Sign In.</h2>
+          <h2 className="text-center my-3">Welcome back! Please Sign In.</h2>
         <Col md="6" className="d-none d-md-block">
           <img src={loginImage} alt="Login Illustration" className="img-fluid" />
         </Col>
@@ -97,11 +97,11 @@ const LoginComponent = () => {
             </FormGroup>
             <Button className="btn-submit" block type="submit">SUBMIT</Button>
           </Form>
-          <p className="terms">
+          {/* <p className="terms">
             By clicking <span className='text-danger'>Submit</span> you also agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
-          </p>
+          </p> */}
           <p className="signup">
-            Need an account? <Link to="/sign-up">Sign up for free</Link>
+            Need an account? <Link to="/registration">Sign up for free</Link>
           </p>
             </div>
         </Col>
