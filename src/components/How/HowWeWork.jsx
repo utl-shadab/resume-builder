@@ -43,7 +43,7 @@ const navigate = useNavigate();
           <Col md="6" className="text-container">
             <h2>How We Work</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <Button className='custom-btn' onClick={() => window.location.href = '/work'}>View More</Button>
+            <Button className='custom-btn work-with-us-button' onClick={() => window.location.href = '/work'}>View More</Button>
           </Col>
         </Row>
       </Container>

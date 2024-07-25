@@ -35,7 +35,7 @@ const CustomNavbar = () => {
                         <a href="#login" className="custom-login-for-mobile">Login</a>
                         <i className="ri-menu-line text-white" onClick={toggleOffcanvas} aria-controls="offcanvasNavbar"></i>
                     </div>
-                    <Nav className="d-none gap-4 d-lg-flex">
+                    <Nav className="d-none gap-4 d-lg-flex align-items-center">
                     <NavItem className="nav-link-animated">
                             <NavLink className='text-white' to="/" activeClassName="active-link">Home</NavLink>
                         </NavItem>
@@ -49,7 +49,8 @@ const CustomNavbar = () => {
                             <NavLink className='text-white' to="/blog" activeClassName="active-link"> Contact Us</NavLink>
                         </NavItem>
                         <NavItem>
-                        <Button color="primary" onClick={() => navigate('/login')} className="mx-3 px-5 text-black bg-white border-0">Login / Register</Button>
+                        <Button onClick={() => navigate('/login')} className="mx-3 px-5 work-with-us-button">Login</Button>
+
                         </NavItem>
                     </Nav>
                 </Container>

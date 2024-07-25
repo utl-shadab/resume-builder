@@ -42,7 +42,7 @@ const Header = () => {
                 <p>
                   Log into Werkfeed to create a standout and professional resume in minutes. A single repository keeping everything needed in one place to help you embark on your professional journey.
                 </p>
-                <Button color="danger" className="custom-btn play-btn" onClick={toggleModal}>Play Video</Button>
+                <Button color="danger" className="custom-btn play-btn custom-btn work-with-us-button  play-btn btn btn-danger" onClick={toggleModal}>Play Video</Button>
                 </div>
               </div>
             </Col>

@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/Footer/Footer'
 import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap'
 import Mission from '../images/mission.svg'
+import Simplicity from '../images/simplicity.png'
+import Smartphone from '../images/smartphone.png'
+import Technology from '../images/technology-driven.png'
+import Flexibility from '../images/flexiblity.png'
+import Ownership from '../images/data-ownership.png'
+import Goals from '../components/How/Goals'
+
 const AboutUs = () => {
   return (
     <div>
@@ -31,8 +38,50 @@ const AboutUs = () => {
             </p>
           </Col>
         </Row>
-
+     
+       
+         
       </Container>
+      <section className="our-values">
+          <h2 className="text-center mission-title my-5">Our Values</h2>
+        <Container>
+         
+          <Row className="text-center justify-content-evenly gap-3">
+              <Col md="2">
+              <div className='about-wrapper'>
+              <img src={Simplicity} alt="Years Of Experience" className="icon" />
+              <p>Simplicity</p>
+              
+              </div>
+            </Col>
+            <Col md="2">  
+              <div className='about-wrapper'>
+              <img src={Smartphone} alt="Projects Delivery" className="icon" />
+             <p>Add To Call</p>
+              </div>
+            </Col>
+            <Col md="2">
+              <div className='about-wrapper'>
+              <img src={Technology} alt="Efficiency" className="icon" />
+              <p>Technology Driven</p>
+              </div>
+            </Col>
+            <Col md="2">
+              <div className='about-wrapper'>
+              <img src={Flexibility} alt="Transparency" className="icon" />
+              <p>Flexibility</p>
+              </div>
+            </Col>
+            <Col md="2">
+                <div className='about-wrapper'>
+              <img src={Ownership} alt="Quality" className="icon" />
+              <p>Data Ownership</p>
+              </div>
+              </Col>
+          </Row>
+          </Container>
+        </section>
+        <Goals />
       <Footer isGeneral={true}/>
     </div>
   )
