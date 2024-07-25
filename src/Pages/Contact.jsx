@@ -35,13 +35,10 @@ const Contact = () => {
             <div className="form-group custom-form-group">
               <select name="subject" id="subject" className="custom-input custom-class">
                 <option className='custom-option' value="" disabled selected hidden>Select a Subject</option>
-                <option value="item1">Item 1</option>
-                <option value="item2">Item 2</option>
-                <option value="item3">Item 3</option>
-                <option value="item4">Item 4</option>
-                <option value="item5">Item 5</option>
-                <option value="item6">Item 6</option>
-                <option value="item7">Item 7</option>
+                <option value="item1">Issues</option>
+                <option value="item2">Complaints</option>
+                <option value="item3">Suggestions</option>
+               
               </select>
               {/* <label htmlFor="subject" className="custom-label">Select a Subject</label> */}
             </div>
