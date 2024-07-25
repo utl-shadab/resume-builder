@@ -122,6 +122,7 @@ const SideForm = ({ handleButtonClick, fileInputRef, handleFileChange, setFirstN
                     <Label for="startMonth">Start Date</Label>
                     <Input type="select" name="startMonth" id="startMonth" onChange={(e) => setStartMonth(e.target.value)}>
                       <option>Month</option>
+                      {/* Add month options here */}
                     </Input>
                   </FormGroup>
                 </Col>
@@ -130,6 +131,7 @@ const SideForm = ({ handleButtonClick, fileInputRef, handleFileChange, setFirstN
                     <Label for="startYear" className="invisible">Year</Label>
                     <Input type="select" name="startYear" id="startYear" onChange={(e) => setStartYear(e.target.value)}>
                       <option>Year</option>
+                      {/* Add year options here */}
                     </Input>
                   </FormGroup>
                 </Col>
@@ -138,14 +140,16 @@ const SideForm = ({ handleButtonClick, fileInputRef, handleFileChange, setFirstN
                     <Label for="endMonth">End Date</Label>
                     <Input type="select" name="endMonth" id="endMonth" onChange={(e) => setEndMonth(e.target.value)}>
                       <option>Month</option>
+                      {/* Add month options here */}
                     </Input>
                   </FormGroup>
                 </Col>
                 <Col md={3}>
                   <FormGroup>
-                    <Label for="endYear" className="invisible">Year</Label>
+                    <Label for="endYear" className="invisible">Year</Label> 
                     <Input type="select" name="endYear" id="endYear" onChange={(e) => setEndYear(e.target.value)}>
                       <option>Year</option>
+                      {/* Add year options here */}
                     </Input>
                   </FormGroup>
                 </Col>
@@ -162,6 +166,12 @@ const SideForm = ({ handleButtonClick, fileInputRef, handleFileChange, setFirstN
                 <Label for="description">Description</Label>
                 <Input type="textarea" name="description" id="description" onChange={(e) => setDescription(e.target.value)} />
               </FormGroup>
+              <div className="button-container">
+                <Button color="danger" className="delete-button">
+                  <i className="fa fa-trash" aria-hidden="true"></i>
+                </Button>
+                <Button color="primary" className="done-button">Done</Button>
+              </div>
             </AccordionBody>
           </AccordionItem>
           <AccordionItem>

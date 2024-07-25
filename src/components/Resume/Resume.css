@@ -68,13 +68,25 @@
   }
   
   .done-button {
-    background-color: #5cb85c;
+    background-color: #BE2F56;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     border-radius: 4px;
   }
-  
+  .delete-button{
+    background-color: #BE2F56 !important;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 4px;
+  }
+  .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
   .custom-accordion .accordion-header {
     display: flex;
     justify-content: space-between;

@@ -20,7 +20,7 @@ const Footer = ({ isGeneral }) => {
         <Col md="4" className="footer-section">
           <h5>Quick Links</h5>
           <ul className='list-unstyled'>
-            <li ><Link className='text-white text-decoration-none' to="/about-us">About Us</Link></li>
+            <li ><Link className='text-white text-decoration-none' to="/company">Company</Link></li>
             <li ><Link className='text-white text-decoration-none' to="/faq">FAQs</Link></li>
             <li ><Link className='text-white text-decoration-none' to="/contact-us">Contact</Link></li>
             <li ><Link className='text-white text-decoration-none' to="/press-coverage">Press Coverage</Link></li>
